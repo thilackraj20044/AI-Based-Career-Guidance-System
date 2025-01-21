@@ -161,7 +161,7 @@ if user_prompt:
 
     # Send the user's message to Gemini-Pro and get the response
     try:
-        gemini_response = st.session_state.chat_session.send_message(user_prompt)
+        gemini_response = st.session_state.chat_session.send_message(user_prompt +  "Please answer it like a chatbot")
         response_text = gemini_response.text  # Access the text attribute directly
 
         # Display Gemini-Pro's response
